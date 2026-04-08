@@ -93,12 +93,61 @@
     .plant-card {
       border: 1px solid #ddd;
       border-radius: 6px;
-      padding: 20px 24px;
-      margin-bottom: 1.5em;
+      overflow: hidden;
+      margin-bottom: 2em;
     }
-    .plant-card h3 { margin-top: 0; color: #2e6b1f; }
-    .plant-card ul { margin: 0.5em 0 0; padding-left: 1.2em; }
-    .plant-card li { margin-bottom: 0.3em; }
+    .plant-card-top {
+      display: flex;
+      gap: 0;
+    }
+    .plant-card-top img {
+      width: 260px;
+      min-width: 260px;
+      height: 220px;
+      object-fit: cover;
+    }
+    .plant-card-top-info {
+      padding: 20px 24px;
+      flex: 1;
+    }
+    .plant-card-top-info h3 { margin: 0 0 8px; color: #2e6b1f; font-size: 1.2em; }
+    .plant-card-top-info p { margin: 0 0 12px; font-size: 0.95em; color: #333; }
+    .plant-meta {
+      display: flex;
+      gap: 0;
+      border-top: 1px solid #ddd;
+      text-align: center;
+      font-size: 0.85em;
+    }
+    .plant-meta-item {
+      flex: 1;
+      padding: 10px 8px;
+      border-right: 1px solid #ddd;
+    }
+    .plant-meta-item:last-child { border-right: none; }
+    .plant-meta-item strong { display: block; color: #2e6b1f; font-size: 0.9em; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 2px; }
+    .plant-card-bottom {
+      display: flex;
+      border-top: 1px solid #ddd;
+    }
+    .plant-card-col {
+      flex: 1;
+      padding: 16px 20px;
+      border-right: 1px solid #ddd;
+    }
+    .plant-card-col:last-child { border-right: none; }
+    .plant-card-col h4 { margin: 0 0 8px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em; color: #555; }
+    .plant-card-col ul { margin: 0; padding-left: 1.1em; font-size: 0.9em; }
+    .plant-card-col li { margin-bottom: 4px; }
+    .plant-card-link { padding: 12px 20px; border-top: 1px solid #ddd; background: #f9f9f9; }
+    .plant-card-link a { color: #2e6b1f; font-weight: bold; text-decoration: none; font-size: 0.95em; }
+    .plant-card-link a:hover { text-decoration: underline; }
+    @media (max-width: 600px) {
+      .plant-card-top { flex-direction: column; }
+      .plant-card-top img { width: 100%; min-width: unset; height: 200px; }
+      .plant-card-bottom { flex-direction: column; }
+      .plant-card-col { border-right: none; border-bottom: 1px solid #ddd; }
+    }
     .tip-box {
       background: #f4faf0;
       border-left: 4px solid #2e6b1f;
@@ -123,86 +172,240 @@
 
   <h2>1. Pothos (Epipremnum aureum)</h2>
   <div class="plant-card">
-    <h3>The easiest plant you'll ever own</h3>
-    <p>Pothos is the number one plant for beginners. It grows in almost any light, survives irregular watering, and tells you when it's thirsty by drooping slightly — then bounces back after a good drink.</p>
-    <ul>
-      <li><strong>Light:</strong> Low to bright indirect light</li>
-      <li><strong>Water:</strong> Once a week, or when soil feels dry</li>
-      <li><strong>Common mistake:</strong> Overwatering — let the soil dry out between waterings</li>
-    </ul>
-    <p><a href="https://www.amazon.in/s?k=pothos+plant&tag=shiyamaladevi-21" target="_blank" rel="nofollow noopener">Check Today's Price for Pothos on Amazon →</a></p>
+    <div class="plant-card-top">
+      <img src="Pothos.jpg" alt="Pothos plant in a pot">
+      <div class="plant-card-top-info">
+        <h3>The easiest plant you'll ever own</h3>
+        <p>Pothos is the number one plant for beginners. It grows in almost any light, survives irregular watering, and tells you when it's thirsty by drooping slightly — then bounces back after a good drink.</p>
+      </div>
+    </div>
+    <div class="plant-meta">
+      <div class="plant-meta-item"><strong>Light</strong>Low to bright indirect</div>
+      <div class="plant-meta-item"><strong>Water</strong>Once a week</div>
+      <div class="plant-meta-item"><strong>Difficulty</strong>Very Easy</div>
+    </div>
+    <div class="plant-card-bottom">
+      <div class="plant-card-col">
+        <h4>Care Tips</h4>
+        <ul>
+          <li>Tolerates low light well</li>
+          <li>Let soil dry between waterings</li>
+          <li>Droops when thirsty — bounces back fast</li>
+        </ul>
+      </div>
+      <div class="plant-card-col">
+        <h4>Common Mistake</h4>
+        <ul>
+          <li>Overwatering — most common killer</li>
+          <li>Check soil before watering</li>
+        </ul>
+      </div>
+    </div>
+    <div class="plant-card-link"><a href="https://www.amazon.in/s?k=pothos+plant&tag=shiyamaladevi-21" target="_blank" rel="nofollow noopener">Check Today's Price for Pothos on Amazon →</a></div>
   </div>
 
   <h2>2. Snake Plant (Sansevieria)</h2>
   <div class="plant-card">
-    <h3>Thrives on neglect</h3>
-    <p>Snake plants are nearly indestructible. They can go weeks without water, survive in low light, and still look good. If you travel often or forget to water, this is your plant.</p>
-    <ul>
-      <li><strong>Light:</strong> Low to bright indirect light</li>
-      <li><strong>Water:</strong> Every 2–3 weeks (less in winter)</li>
-      <li><strong>Common mistake:</strong> Watering too often — root rot is the only real way to kill it</li>
-    </ul>
-    <p><a href="https://www.amazon.in/s?k=snake+plant&tag=shiyamaladevi-21" target="_blank" rel="nofollow noopener">Check Today's Price for Snake Plant on Amazon →</a></p>
+    <div class="plant-card-top">
+      <img src="SnakePlant.jpg" alt="Snake plant in a terracotta pot">
+      <div class="plant-card-top-info">
+        <h3>Thrives on neglect</h3>
+        <p>Snake plants are nearly indestructible. They can go weeks without water, survive in low light, and still look good. If you travel often or forget to water, this is your plant.</p>
+      </div>
+    </div>
+    <div class="plant-meta">
+      <div class="plant-meta-item"><strong>Light</strong>Low to bright indirect</div>
+      <div class="plant-meta-item"><strong>Water</strong>Every 2–3 weeks</div>
+      <div class="plant-meta-item"><strong>Difficulty</strong>Very Easy</div>
+    </div>
+    <div class="plant-card-bottom">
+      <div class="plant-card-col">
+        <h4>Care Tips</h4>
+        <ul>
+          <li>Survives weeks without water</li>
+          <li>Great for low light rooms</li>
+          <li>Water less in winter</li>
+        </ul>
+      </div>
+      <div class="plant-card-col">
+        <h4>Common Mistake</h4>
+        <ul>
+          <li>Watering too often causes root rot</li>
+          <li>Root rot is the only real way to kill it</li>
+        </ul>
+      </div>
+    </div>
+    <div class="plant-card-link"><a href="https://www.amazon.in/s?k=snake+plant&tag=shiyamaladevi-21" target="_blank" rel="nofollow noopener">Check Today's Price for Snake Plant on Amazon →</a></div>
   </div>
 
   <h2>3. ZZ Plant (Zamioculcas zamiifolia)</h2>
   <div class="plant-card">
-    <h3>Built for dark rooms and forgetful owners</h3>
-    <p>ZZ plants store water in their roots, which means they're drought-tolerant by nature. They grow slowly, need very little light, and look beautiful with their glossy dark green leaves.</p>
-    <ul>
-      <li><strong>Light:</strong> Low to medium indirect light</li>
-      <li><strong>Water:</strong> Every 2–4 weeks</li>
-      <li><strong>Common mistake:</strong> Putting it in direct sun — leaves will yellow and burn</li>
-    </ul>
-    <p><a href="https://www.amazon.in/s?k=zz+plant&tag=shiyamaladevi-21" target="_blank" rel="nofollow noopener">Check Today's Price for ZZ Plant on Amazon →</a></p>
+    <div class="plant-card-top">
+      <img src="ZZPlant.jpg" alt="ZZ plant with glossy green leaves">
+      <div class="plant-card-top-info">
+        <h3>Built for dark rooms and forgetful owners</h3>
+        <p>ZZ plants store water in their roots, which means they're drought-tolerant by nature. They grow slowly, need very little light, and look beautiful with their glossy dark green leaves.</p>
+      </div>
+    </div>
+    <div class="plant-meta">
+      <div class="plant-meta-item"><strong>Light</strong>Low to medium indirect</div>
+      <div class="plant-meta-item"><strong>Water</strong>Every 2–4 weeks</div>
+      <div class="plant-meta-item"><strong>Difficulty</strong>Very Easy</div>
+    </div>
+    <div class="plant-card-bottom">
+      <div class="plant-card-col">
+        <h4>Care Tips</h4>
+        <ul>
+          <li>Stores water in roots — drought tolerant</li>
+          <li>Perfect for dark corners</li>
+          <li>Slow grower, very low maintenance</li>
+        </ul>
+      </div>
+      <div class="plant-card-col">
+        <h4>Common Mistake</h4>
+        <ul>
+          <li>Direct sun yellows and burns leaves</li>
+          <li>Overwatering causes root rot</li>
+        </ul>
+      </div>
+    </div>
+    <div class="plant-card-link"><a href="https://www.amazon.in/s?k=zz+plant&tag=shiyamaladevi-21" target="_blank" rel="nofollow noopener">Check Today's Price for ZZ Plant on Amazon →</a></div>
   </div>
 
   <h2>4. Spider Plant (Chlorophytum comosum)</h2>
   <div class="plant-card">
-    <h3>Great for hanging baskets</h3>
-    <p>Spider plants are forgiving, fast-growing, and fun — they produce little "baby" plants that hang down like spiders. You can propagate them easily and give them to friends.</p>
-    <ul>
-      <li><strong>Light:</strong> Bright to moderate indirect light</li>
-      <li><strong>Water:</strong> Once a week, let soil dry slightly between waterings</li>
-      <li><strong>Common mistake:</strong> Using tap water with fluoride — use filtered or rainwater if tips turn brown</li>
-    </ul>
-    <p><a href="https://www.amazon.in/s?k=spider+plant&tag=shiyamaladevi-21" target="_blank" rel="nofollow noopener">Check Today's Price for Spider Plant on Amazon →</a></p>
+    <div class="plant-card-top">
+      <img src="SpiderPlant.jpg" alt="Spider plant in a polka dot pot">
+      <div class="plant-card-top-info">
+        <h3>Great for hanging baskets</h3>
+        <p>Spider plants are forgiving, fast-growing, and fun — they produce little "baby" plants that hang down like spiders. You can propagate them easily and give them to friends.</p>
+      </div>
+    </div>
+    <div class="plant-meta">
+      <div class="plant-meta-item"><strong>Light</strong>Bright to moderate indirect</div>
+      <div class="plant-meta-item"><strong>Water</strong>Once a week</div>
+      <div class="plant-meta-item"><strong>Difficulty</strong>Easy</div>
+    </div>
+    <div class="plant-card-bottom">
+      <div class="plant-card-col">
+        <h4>Care Tips</h4>
+        <ul>
+          <li>Produces baby plants you can propagate</li>
+          <li>Great in hanging baskets</li>
+          <li>Fast grower, very forgiving</li>
+        </ul>
+      </div>
+      <div class="plant-card-col">
+        <h4>Common Mistake</h4>
+        <ul>
+          <li>Tap water fluoride browns the tips</li>
+          <li>Use filtered or rainwater if possible</li>
+        </ul>
+      </div>
+    </div>
+    <div class="plant-card-link"><a href="https://www.amazon.in/s?k=spider+plant&tag=shiyamaladevi-21" target="_blank" rel="nofollow noopener">Check Today's Price for Spider Plant on Amazon →</a></div>
   </div>
 
   <h2>5. Peace Lily (Spathiphyllum)</h2>
   <div class="plant-card">
-    <h3>Tells you exactly when it needs water</h3>
-    <p>Peace lilies droop dramatically when they need water — and perk right back up within hours of watering. They also bloom with white flowers indoors, which is rare for low-light plants.</p>
-    <ul>
-      <li><strong>Light:</strong> Low to medium indirect light</li>
-      <li><strong>Water:</strong> When leaves start to slightly droop</li>
-      <li><strong>Common mistake:</strong> Direct sunlight will scorch the leaves</li>
-    </ul>
-    <p><a href="https://www.amazon.in/s?k=peace+lily+plant&tag=shiyamaladevi-21" target="_blank" rel="nofollow noopener">Check Today's Price for Peace Lily on Amazon →</a></p>
+    <div class="plant-card-top">
+      <img src="PeaceLilly.jpg" alt="Peace lily with white flowers on light blue background">
+      <div class="plant-card-top-info">
+        <h3>Tells you exactly when it needs water</h3>
+        <p>Peace lilies droop dramatically when they need water — and perk right back up within hours of watering. They also bloom with white flowers indoors, which is rare for low-light plants.</p>
+      </div>
+    </div>
+    <div class="plant-meta">
+      <div class="plant-meta-item"><strong>Light</strong>Low to medium indirect</div>
+      <div class="plant-meta-item"><strong>Water</strong>When leaves droop</div>
+      <div class="plant-meta-item"><strong>Difficulty</strong>Easy</div>
+    </div>
+    <div class="plant-card-bottom">
+      <div class="plant-card-col">
+        <h4>Care Tips</h4>
+        <ul>
+          <li>Droops to signal thirst — very reliable</li>
+          <li>Blooms white flowers in low light</li>
+          <li>Perks up within hours of watering</li>
+        </ul>
+      </div>
+      <div class="plant-card-col">
+        <h4>Common Mistake</h4>
+        <ul>
+          <li>Direct sunlight scorches the leaves</li>
+          <li>Keep away from south-facing windows</li>
+        </ul>
+      </div>
+    </div>
+    <div class="plant-card-link"><a href="https://www.amazon.in/s?k=peace+lily+plant&tag=shiyamaladevi-21" target="_blank" rel="nofollow noopener">Check Today's Price for Peace Lily on Amazon →</a></div>
   </div>
 
   <h2>6. Rubber Plant (Ficus elastica)</h2>
   <div class="plant-card">
-    <h3>Bold, beautiful, and easy to maintain</h3>
-    <p>Rubber plants have large, glossy leaves and grow tall over time. They prefer bright indirect light but adapt well to most indoor conditions. Water them less in winter.</p>
-    <ul>
-      <li><strong>Light:</strong> Bright indirect light</li>
-      <li><strong>Water:</strong> Every 1–2 weeks, when top inch of soil is dry</li>
-      <li><strong>Common mistake:</strong> Moving it around too much — they prefer staying in one spot</li>
-    </ul>
-    <p><a href="https://www.amazon.in/s?k=rubber+plant+ficus&tag=shiyamaladevi-21" target="_blank" rel="nofollow noopener">Check Today's Price for Rubber Plant on Amazon →</a></p>
+    <div class="plant-card-top">
+      <img src="RubberPlant.jpg" alt="Rubber plant in a white pot">
+      <div class="plant-card-top-info">
+        <h3>Bold, beautiful, and easy to maintain</h3>
+        <p>Rubber plants have large, glossy leaves and grow tall over time. They prefer bright indirect light but adapt well to most indoor conditions. Water them less in winter.</p>
+      </div>
+    </div>
+    <div class="plant-meta">
+      <div class="plant-meta-item"><strong>Light</strong>Bright indirect</div>
+      <div class="plant-meta-item"><strong>Water</strong>Every 1–2 weeks</div>
+      <div class="plant-meta-item"><strong>Difficulty</strong>Easy</div>
+    </div>
+    <div class="plant-card-bottom">
+      <div class="plant-card-col">
+        <h4>Care Tips</h4>
+        <ul>
+          <li>Grows tall with large glossy leaves</li>
+          <li>Water less in winter</li>
+          <li>Check top inch of soil before watering</li>
+        </ul>
+      </div>
+      <div class="plant-card-col">
+        <h4>Common Mistake</h4>
+        <ul>
+          <li>Moving it too often stresses the plant</li>
+          <li>Pick a spot and leave it there</li>
+        </ul>
+      </div>
+    </div>
+    <div class="plant-card-link"><a href="https://www.amazon.in/s?k=rubber+plant+ficus&tag=shiyamaladevi-21" target="_blank" rel="nofollow noopener">Check Today's Price for Rubber Plant on Amazon →</a></div>
   </div>
 
   <h2>7. Aloe Vera</h2>
   <div class="plant-card">
-    <h3>Useful and nearly impossible to kill</h3>
-    <p>Aloe vera is a succulent that thrives on neglect. It needs bright light and very little water. As a bonus, you can use the gel from its leaves on minor burns and skin irritation.</p>
-    <ul>
-      <li><strong>Light:</strong> Bright indirect or some direct sun</li>
-      <li><strong>Water:</strong> Every 2–3 weeks — let soil dry completely</li>
-      <li><strong>Common mistake:</strong> Overwatering is the fastest way to kill an aloe</li>
-    </ul>
-    <p><a href="https://www.amazon.in/s?k=aloe+vera+plant&tag=shiyamaladevi-21" target="_blank" rel="nofollow noopener">Check Today's Price for Aloe Vera on Amazon →</a></p>
+    <div class="plant-card-top">
+      <img src="AloeVera.jpg" alt="Aloe vera plant with water drops">
+      <div class="plant-card-top-info">
+        <h3>Useful and nearly impossible to kill</h3>
+        <p>Aloe vera is a succulent that thrives on neglect. It needs bright light and very little water. As a bonus, you can use the gel from its leaves on minor burns and skin irritation.</p>
+      </div>
+    </div>
+    <div class="plant-meta">
+      <div class="plant-meta-item"><strong>Light</strong>Bright indirect or direct</div>
+      <div class="plant-meta-item"><strong>Water</strong>Every 2–3 weeks</div>
+      <div class="plant-meta-item"><strong>Difficulty</strong>Very Easy</div>
+    </div>
+    <div class="plant-card-bottom">
+      <div class="plant-card-col">
+        <h4>Care Tips</h4>
+        <ul>
+          <li>Let soil dry completely before watering</li>
+          <li>Gel soothes minor burns and skin irritation</li>
+          <li>Thrives with neglect</li>
+        </ul>
+      </div>
+      <div class="plant-card-col">
+        <h4>Common Mistake</h4>
+        <ul>
+          <li>Overwatering kills it fastest</li>
+          <li>Never let it sit in standing water</li>
+        </ul>
+      </div>
+    </div>
+    <div class="plant-card-link"><a href="https://www.amazon.in/s?k=aloe+vera+plant&tag=shiyamaladevi-21" target="_blank" rel="nofollow noopener">Check Today's Price for Aloe Vera on Amazon →</a></div>
   </div>
 
   <h2>Common Mistakes Beginners Make</h2>
