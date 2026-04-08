@@ -7,6 +7,13 @@
   <meta name="google-site-verification" content="tUGii7vNRdf8OGog2GUqxJLeVXjgFWwDt4QGyQeGvLE" />
   <meta name="p:domain_verify" content="7990dfe1b21b3673e19fe1d944ed59da"/>
   <meta name="description" content="The best low-maintenance indoor plants for beginners — easy to care for, hard to kill, and perfect for any home. Honest tips from a fellow beginner.">
+  <!-- Open Graph / Pinterest -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Best Low-Maintenance Indoor Plants That Are Hard to Kill">
+  <meta property="og:description" content="The best low-maintenance indoor plants for beginners — easy to care for, hard to kill, and perfect for any home.">
+  <meta property="og:image" content="https://shiyamaladevir.com/low-maintenance-plants/Pothos.jpg">
+  <meta property="og:url" content="https://shiyamaladevir.com/low-maintenance-plants/">
+  <meta name="pinterest:description" content="7 low-maintenance indoor plants that are almost impossible to kill — perfect for beginners. Care tips, watering guide, and where to buy.">
   <title>Best Low-Maintenance Indoor Plants That Are Hard to Kill | Shiyamala</title>
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H0BSRDFQY"></script>
@@ -106,6 +113,36 @@
       height: 220px;
       object-fit: cover;
     }
+    .plant-img-wrap {
+      position: relative;
+      width: 260px;
+      min-width: 260px;
+      height: 220px;
+    }
+    .plant-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .pin-btn {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background: #e60023;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 5px 10px;
+      font-size: 0.78em;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      display: none;
+    }
+    .plant-img-wrap:hover .pin-btn { display: block; }
+    @media (max-width: 600px) {
+      .plant-img-wrap { width: 100%; min-width: unset; }
+    }
     .plant-card-top-info {
       padding: 20px 24px;
       flex: 1;
@@ -173,7 +210,10 @@
   <h2>1. Pothos (Epipremnum aureum)</h2>
   <div class="plant-card">
     <div class="plant-card-top">
-      <img src="Pothos.jpg" alt="Pothos plant in a pot">
+      <div class="plant-img-wrap">
+        <img src="Pothos.jpg" alt="Pothos plant in a pot">
+        <a class="pin-btn" href="https://pinterest.com/pin/create/button/?url=https://shiyamaladevir.com/low-maintenance-plants/&media=https://shiyamaladevir.com/low-maintenance-plants/Pothos.jpg&description=Pothos+–+The+easiest+indoor+plant+for+beginners" target="_blank" rel="noopener">📌 Save</a>
+      </div>
       <div class="plant-card-top-info">
         <h3>The easiest plant you'll ever own</h3>
         <p>Pothos is the number one plant for beginners. It grows in almost any light, survives irregular watering, and tells you when it's thirsty by drooping slightly — then bounces back after a good drink.</p>
@@ -207,7 +247,10 @@
   <h2>2. Snake Plant (Sansevieria)</h2>
   <div class="plant-card">
     <div class="plant-card-top">
-      <img src="Snake Plant.jpg" alt="Snake plant in a terracotta pot">
+      <div class="plant-img-wrap">
+        <img src="Snake Plant.jpg" alt="Snake plant in a terracotta pot">
+        <a class="pin-btn" href="https://pinterest.com/pin/create/button/?url=https://shiyamaladevir.com/low-maintenance-plants/&media=https://shiyamaladevir.com/low-maintenance-plants/Snake%20Plant.jpg&description=Snake+Plant+–+Thrives+on+neglect,+perfect+for+beginners" target="_blank" rel="noopener">📌 Save</a>
+      </div>
       <div class="plant-card-top-info">
         <h3>Thrives on neglect</h3>
         <p>Snake plants are nearly indestructible. They can go weeks without water, survive in low light, and still look good. If you travel often or forget to water, this is your plant.</p>
@@ -241,7 +284,10 @@
   <h2>3. ZZ Plant (Zamioculcas zamiifolia)</h2>
   <div class="plant-card">
     <div class="plant-card-top">
-      <img src="ZZ Plant.jpg" alt="ZZ plant with glossy green leaves">
+      <div class="plant-img-wrap">
+        <img src="ZZ Plant.jpg" alt="ZZ plant with glossy green leaves">
+        <a class="pin-btn" href="https://pinterest.com/pin/create/button/?url=https://shiyamaladevir.com/low-maintenance-plants/&media=https://shiyamaladevir.com/low-maintenance-plants/ZZ%20Plant.jpg&description=ZZ+Plant+–+Built+for+dark+rooms+and+forgetful+owners" target="_blank" rel="noopener">📌 Save</a>
+      </div>
       <div class="plant-card-top-info">
         <h3>Built for dark rooms and forgetful owners</h3>
         <p>ZZ plants store water in their roots, which means they're drought-tolerant by nature. They grow slowly, need very little light, and look beautiful with their glossy dark green leaves.</p>
@@ -275,7 +321,10 @@
   <h2>4. Spider Plant (Chlorophytum comosum)</h2>
   <div class="plant-card">
     <div class="plant-card-top">
-      <img src="Spider Plant.jpg" alt="Spider plant in a polka dot pot">
+      <div class="plant-img-wrap">
+        <img src="Spider Plant.jpg" alt="Spider plant in a polka dot pot">
+        <a class="pin-btn" href="https://pinterest.com/pin/create/button/?url=https://shiyamaladevir.com/low-maintenance-plants/&media=https://shiyamaladevir.com/low-maintenance-plants/Spider%20Plant.jpg&description=Spider+Plant+–+Great+for+hanging+baskets,+easy+to+propagate" target="_blank" rel="noopener">📌 Save</a>
+      </div>
       <div class="plant-card-top-info">
         <h3>Great for hanging baskets</h3>
         <p>Spider plants are forgiving, fast-growing, and fun — they produce little "baby" plants that hang down like spiders. You can propagate them easily and give them to friends.</p>
@@ -309,7 +358,10 @@
   <h2>5. Peace Lily (Spathiphyllum)</h2>
   <div class="plant-card">
     <div class="plant-card-top">
-      <img src="PeaceLilly.jpg" alt="Peace lily with white flowers on light blue background" style="object-position: right center;">
+      <div class="plant-img-wrap">
+        <img src="PeaceLilly.jpg" alt="Peace lily with white flowers on light blue background" style="object-position: right center;">
+        <a class="pin-btn" href="https://pinterest.com/pin/create/button/?url=https://shiyamaladevir.com/low-maintenance-plants/&media=https://shiyamaladevir.com/low-maintenance-plants/PeaceLilly.jpg&description=Peace+Lily+–+Tells+you+exactly+when+it+needs+water" target="_blank" rel="noopener">📌 Save</a>
+      </div>
       <div class="plant-card-top-info">
         <h3>Tells you exactly when it needs water</h3>
         <p>Peace lilies droop dramatically when they need water — and perk right back up within hours of watering. They also bloom with white flowers indoors, which is rare for low-light plants.</p>
@@ -343,7 +395,10 @@
   <h2>6. Rubber Plant (Ficus elastica)</h2>
   <div class="plant-card">
     <div class="plant-card-top">
-      <img src="Rubber Plant.jpg" alt="Rubber plant in a white pot">
+      <div class="plant-img-wrap">
+        <img src="Rubber Plant.jpg" alt="Rubber plant in a white pot">
+        <a class="pin-btn" href="https://pinterest.com/pin/create/button/?url=https://shiyamaladevir.com/low-maintenance-plants/&media=https://shiyamaladevir.com/low-maintenance-plants/Rubber%20Plant.jpg&description=Rubber+Plant+–+Bold,+beautiful+and+easy+to+maintain" target="_blank" rel="noopener">📌 Save</a>
+      </div>
       <div class="plant-card-top-info">
         <h3>Bold, beautiful, and easy to maintain</h3>
         <p>Rubber plants have large, glossy leaves and grow tall over time. They prefer bright indirect light but adapt well to most indoor conditions. Water them less in winter.</p>
@@ -377,7 +432,10 @@
   <h2>7. Aloe Vera</h2>
   <div class="plant-card">
     <div class="plant-card-top">
-      <img src="AloeVera.jpg" alt="Aloe vera plant with water drops">
+      <div class="plant-img-wrap">
+        <img src="AloeVera.jpg" alt="Aloe vera plant with water drops">
+        <a class="pin-btn" href="https://pinterest.com/pin/create/button/?url=https://shiyamaladevir.com/low-maintenance-plants/&media=https://shiyamaladevir.com/low-maintenance-plants/AloeVera.jpg&description=Aloe+Vera+–+Useful+and+nearly+impossible+to+kill" target="_blank" rel="noopener">📌 Save</a>
+      </div>
       <div class="plant-card-top-info">
         <h3>Useful and nearly impossible to kill</h3>
         <p>Aloe vera is a succulent that thrives on neglect. It needs bright light and very little water. As a bonus, you can use the gel from its leaves on minor burns and skin irritation.</p>
